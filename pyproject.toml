@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+dynamic = [ "version" ]
+name = "pyzid"
+authors = [
+    { name = "deadblue", email = "root@dead.blue" }
+]
+description = "A sortable unique identifier generator."
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3"
+]
+readme = { file = "README.md" }
+license = "MIT"
+requires-python = ">=3.12"
+
+[project.urls]
+Homepage = "https://github.com/deadblue/pyzid"
+Repository = "https://github.com/deadblue/pyzid"
+
+[tool.hatch.build.targets.wheel]
+packages = [ "src/zid" ]
+
+[tool.hatch.version]
+path = "src/zid/__about__.py"

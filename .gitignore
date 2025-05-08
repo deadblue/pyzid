@@ -1,0 +1,9 @@
+.venv
+.vscode
+.env
+
+__pycache__
+dist
+
+test.py
+test-*.py
