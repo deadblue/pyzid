@@ -16,7 +16,7 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3"
 ]
-readme = { file = "README.md" }
+readme = "README.md"
 license = "MIT"
 requires-python = ">=3.12"
 
@@ -25,7 +25,7 @@ Homepage = "https://github.com/deadblue/pyzid"
 Repository = "https://github.com/deadblue/pyzid"
 
 [tool.hatch.build.targets.wheel]
-packages = [ "src/zid" ]
+packages = [ "src/pyzid" ]
 
 [tool.hatch.version]
-path = "src/zid/__about__.py"
+path = "src/pyzid/__about__.py"
